@@ -162,7 +162,6 @@ body {
 }
 @media (min-width: 768px) {
   .container {
-    border: 6px solid;
     flex-direction: row;
     row-gap: 0;
     -moz-column-gap: 3.5rem;
