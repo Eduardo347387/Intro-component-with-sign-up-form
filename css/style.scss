@@ -93,17 +93,37 @@ body{
             .form{
                 display: flex;
                 flex-direction: column;
-                input{
-                    &:nth-child(1){margin-top: 0;}
-                    height: 5.5rem;
-                    border-radius: 0.6rem;
-                    border: 0.1rem solid var(--Grayish_Blue);
+                .box-input{
                     margin-top: 1.8rem;
-                    padding-left: 2rem;
-                    font-size: 1.5rem;
-                    font-weight: 700;
-                    color: var(--Dark_Blue);
-                    outline: none;
+                    &:nth-child(1){margin-top: 0;}
+                    .input-container{
+                        border: 0.1rem solid var(--Grayish_Blue);
+                        height: 5.5rem;
+                        display: flex;
+                        align-items: center;
+                        border-radius: 0.6rem;
+                        padding-left: 2rem;
+                        padding-right: 1.1rem;
+    
+                        input{
+                            border: 0.1rem solid var(--Grayish_Blue);
+                            flex: 1;
+                            font-size: 1.5rem;
+                            font-weight: 700;
+                            color: var(--Dark_Blue);
+                            padding-right: 1.2rem;
+                            border: none;
+                            outline: none;
+                            &:-webkit-autofill {
+                                -webkit-box-shadow: 0 0 0 1000px transparent inset;
+                                transition: background-color 5000s ease-in-out 0s;
+                            }
+                        }
+                        .icon{
+                            display: none;
+                            width: 3.3rem;
+                        }
+                    }
                 }
                 button{
                     margin-top: 2rem;
@@ -130,7 +150,7 @@ body{
                         text-decoration: none;
                         font-weight:600;
                         color: var(--Red);
-                    }
+                    } 
                 }
             }
         }

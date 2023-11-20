@@ -89,19 +89,39 @@ body {
   display: flex;
   flex-direction: column;
 }
-.container .box-registro .box-form .form input {
-  height: 5.5rem;
-  border-radius: 0.6rem;
-  border: 0.1rem solid var(--Grayish_Blue);
+.container .box-registro .box-form .form .box-input {
   margin-top: 1.8rem;
+}
+.container .box-registro .box-form .form .box-input:nth-child(1) {
+  margin-top: 0;
+}
+.container .box-registro .box-form .form .box-input .input-container {
+  border: 0.1rem solid var(--Grayish_Blue);
+  height: 5.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.6rem;
   padding-left: 2rem;
+  padding-right: 1.1rem;
+}
+.container .box-registro .box-form .form .box-input .input-container input {
+  border: 0.1rem solid var(--Grayish_Blue);
+  flex: 1;
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--Dark_Blue);
+  padding-right: 1.2rem;
+  border: none;
   outline: none;
 }
-.container .box-registro .box-form .form input:nth-child(1) {
-  margin-top: 0;
+.container .box-registro .box-form .form .box-input .input-container input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.container .box-registro .box-form .form .box-input .input-container .icon {
+  display: none;
+  width: 3.3rem;
 }
 .container .box-registro .box-form .form button {
   margin-top: 2rem;

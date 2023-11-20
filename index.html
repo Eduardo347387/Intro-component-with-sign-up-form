@@ -25,11 +25,35 @@
 
       <div class="box-form">
         <form id="formulario" class="form" action="#">
-          <input type="text" id="nombre" placeholder="Nombre">
-          <input type="text" id="Apellido" placeholder="Apellido">
-          <input type="email" id="email" placeholder="Gmail">
-          <input type="password" id="password" placeholder="contraseña" autocomplete="username">
-  
+
+          <div class="box-input">
+            <div class="input-container">
+              <input type="text" id="nombre" placeholder="Nombre">
+              <span class="icon" id="error-icon"><img src="./images/icon-error.svg" alt="icon"></span>
+            </div>
+          </div>
+        
+          <div class="box-input">
+            <div class="input-container">
+              <input type="text" id="Apellido" placeholder="Apellido">
+              <span class="icon" id="error-icon"><img src="./images/icon-error.svg" alt="icon"></span>
+            </div>
+          </div>
+
+         <div class="box-input">
+          <div class="input-container">
+            <input type="text" id="email" placeholder="Gmail">
+            <span class="icon" id="error-icon"><img src="./images/icon-error.svg" alt="icon"></span>
+          </div>
+         </div>
+
+         <div class="box-input">
+          <div class="input-container">
+            <input type="password" id="password" placeholder="contraseña" autocomplete="username">
+            <span class="icon" id="error-icon"><img src="./images/icon-error.svg" alt="icon"></span>
+          </div>
+         </div>
+
           <button id="button-submit" type="submit">Claim your free trial </button>
         </form>
         <div class="termsConditions">
