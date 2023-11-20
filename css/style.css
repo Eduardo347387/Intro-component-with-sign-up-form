@@ -1,1 +1,195 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --while: hsl(0, 0%, 100%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark_Blue: hsl(249, 10%, 26%) ;
+  --Grayish_Blue: hsl(246, 25%, 77%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  row-gap: 4.5rem;
+  background-color: hsl(0, 65%, 62%);
+  opacity: 0.9;
+  background-image: url(../images/bg-intro-mobile.png);
+  background-repeat: repeat-x;
+  background-position: top;
+  background-size: cover;
+  padding: 1rem 2rem 1rem 2rem;
+}
+.container .box-texts {
+  padding: 0 2.5rem;
+}
+.container .box-texts .title, .container .box-texts .paragraph {
+  color: var(--while);
+  text-align: center;
+}
+.container .box-texts .title {
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+.container .box-texts .paragraph {
+  padding: 0 1rem;
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  word-spacing: 0.1rem;
+  opacity: 0.8;
+}
+.container .box-registro .box-advertisement {
+  background-color: hsl(248, 44%, 44%);
+  border-radius: 0.8rem;
+  height: 7.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.6rem 0.1rem rgba(0, 0, 0, 0.181);
+}
+.container .box-registro .box-advertisement .advertisement {
+  text-align: center;
+  padding: 0 7rem;
+  color: var(--while);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.container .box-registro .box-advertisement .advertisement span {
+  font-weight: 400;
+  color: var(--Grayish_Blue);
+}
+.container .box-registro .box-form {
+  margin-top: 2.1rem;
+  padding: 2.5rem 2rem 2rem 2rem;
+  background-color: var(--while);
+  border-radius: 1rem;
+  box-shadow: 0 0.6rem 0.1rem rgba(0, 0, 0, 0.181);
+}
+.container .box-registro .box-form .form {
+  display: flex;
+  flex-direction: column;
+}
+.container .box-registro .box-form .form input {
+  height: 5.5rem;
+  border-radius: 0.6rem;
+  border: 0.1rem solid var(--Grayish_Blue);
+  margin-top: 1.8rem;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--Dark_Blue);
+  outline: none;
+}
+.container .box-registro .box-form .form input:nth-child(1) {
+  margin-top: 0;
+}
+.container .box-registro .box-form .form button {
+  margin-top: 2rem;
+  background-color: var(--Green);
+  color: var(--while);
+  height: 5.2rem;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  border-radius: 0.6rem;
+  box-shadow: inset 0 -0.4rem 0.1rem rgba(0, 0, 0, 0.181);
+}
+.container .box-registro .box-form .termsConditions {
+  margin-top: 1.3rem;
+}
+.container .box-registro .box-form .termsConditions .text {
+  padding: 0 0.4rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: var(--Grayish_Blue);
+}
+.container .box-registro .box-form .termsConditions .text a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--Red);
+}
+
+@media (min-width: 376px) {
+  .container {
+    background-image: url(../images/bg-intro-desktop.png);
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    border: 6px solid;
+    flex-direction: row;
+    row-gap: 0;
+    -moz-column-gap: 3.5rem;
+         column-gap: 3.5rem;
+  }
+  .container .box-texts {
+    width: 40rem;
+    padding: 0;
+  }
+  .container .box-texts .title, .container .box-texts .paragraph {
+    text-align: left;
+  }
+  .container .box-texts .title {
+    font-weight: 800;
+    font-size: 4.5rem;
+  }
+  .container .box-texts .paragraph {
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    padding: 0;
+  }
+  .container .box-registro .box-advertisement {
+    height: unset;
+    padding: 1.5rem 0;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    -moz-column-gap: 5rem;
+         column-gap: 5rem;
+  }
+  .container .box-texts {
+    width: unset;
+    max-width: 52rem;
+  }
+  .container .box-texts .title {
+    letter-spacing: 0.1rem;
+  }
+  .container .box-registro {
+    width: 46rem;
+  }
+}
+@media (min-width: 1300px) {
+  html {
+    font-size: 70%;
+  }
+  .container {
+    -moz-column-gap: 12rem;
+         column-gap: 12rem;
+  }
+  .container .box-registro {
+    width: 48rem;
+  }
+}/*# sourceMappingURL=style.css.map */
